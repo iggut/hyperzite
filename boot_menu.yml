@@ -1,0 +1,5 @@
+ublue_variants:
+  - label: qoijjj/wayblue
+    ks: /kickstart/ublue-os.ks
+    flavors:
+      - label: wayblue
