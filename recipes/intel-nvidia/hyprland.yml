@@ -28,4 +28,4 @@ modules:
         - IntelOneMono
         - JetBrainsMono
       google-fonts:
-        - Roboto- https://copr.fedorainfracloud.org/coprs/pesader/showmethekey/repo/fedora-%OS_VERSION%/pesader-showmethekey-fedora-%OS_VERSION%.repo
+        - Roboto
