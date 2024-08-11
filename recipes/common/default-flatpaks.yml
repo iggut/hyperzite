@@ -5,6 +5,7 @@ system:
   repo-name: flathub
   repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
   install:
+  - com.google.Chrome
   - io.github.dvlv.boxbuddyrs
   - io.github.flattool.Warehouse
   - com.github.tchx84.Flatseal
@@ -15,6 +16,8 @@ system:
   - net.nokyan.Resources
   - fr.sgued.ten_forward
   - org.libreoffice.LibreOffice
+  - com.obsproject.Studio
+  - com.obsproject.Studio.Plugin.OBSVkCapture
   remove:
-  - io.missioncenter.MissionCenter
+  #- io.missioncenter.MissionCenter
 
