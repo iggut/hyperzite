@@ -1,0 +1,9 @@
+type: akmods
+install:
+  - openrazer
+  - v4l2loopback
+  - gcadapter_oc
+  - xpadneo
+  - xone
+  - openrgb
+  - kvmfr
