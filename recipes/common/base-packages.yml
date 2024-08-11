@@ -2,6 +2,7 @@ type: rpm-ostree
 repos: 
   - https://copr.fedorainfracloud.org/coprs/hikariknight/looking-glass-kvmfr/repo/fedora-40/hikariknight-looking-glass-kvmfr-fedora-40.repo
   - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-40/decathorpe-miniaturo-fedora-40.repo
+  - "https://download.opensuse.org/repositories/home:paul4us/Fedora_40/home:paul4us.repo"
 install:
   - podman-compose
   - libvirt
@@ -9,4 +10,5 @@ install:
   - libopenraw
   - htop
   - nvtop
+  - klassy
 remove:
