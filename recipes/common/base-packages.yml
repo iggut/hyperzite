@@ -3,7 +3,9 @@ repos:
   - https://copr.fedorainfracloud.org/coprs/hikariknight/looking-glass-kvmfr/repo/fedora-40/hikariknight-looking-glass-kvmfr-fedora-40.repo
   - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-40/decathorpe-miniaturo-fedora-40.repo
   - "https://download.opensuse.org/repositories/home:paul4us/Fedora_40/home:paul4us.repo"
+  - https://copr.fedorainfracloud.org/coprs/pesader/showmethekey/repo/fedora-40/pesader-showmethekey-fedora-40.repo
 install:
+  - showmethekey # Keyboard code viewer, doesn't work in container
   - podman-compose
   - libvirt
   - miniaturo
@@ -12,3 +14,5 @@ install:
   - nvtop
   - klassy
 remove:
+  - firefox # default firefox removed in favor of flatpak
+  - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
