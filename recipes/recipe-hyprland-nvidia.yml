@@ -2,9 +2,9 @@ name: hyprland-nvidia
 
 description: ublue images for wayland compositors
 
-base-image: ghcr.io/ublue-os/base-nvidia
+base-image: ghcr.io/ublue-os/bazzite-nvidia
 
-image-version: 40
+image-version: latest
 
 modules:
   - from-file: sddm-packages.yml
@@ -15,5 +15,7 @@ modules:
   - from-file: common-scripts.yml
   - from-file: hyprland-scripts.yml  
   - from-file: sddm-scripts.yml
-  - type: wayblue-signing
+  - #type: wayblue-signing
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
   - from-file: sddm-systemd.yml
+
