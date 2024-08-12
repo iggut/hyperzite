@@ -21,7 +21,7 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
-          - recipe-hyprland-nvidia.yml
+          - #recipe-hyprland-nvidia.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
