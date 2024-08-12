@@ -1,16 +1,18 @@
-name: build-wayblue
+name: HyprBlue-builder
 on:
   schedule:
-    - cron: "00 4 * * *" # build at 4:00 UTC every day 
-                          # (20 minutes after last ublue images start building)
+    - cron: "00 18 * * *" # build at 18:00 UTC every day 
+                          # 80 minutes after the last uBlue images start building
+                          # 60 minutes after last wayblue images start building
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
       
+  pull_request:
   workflow_dispatch: # allow manually triggering builds
 jobs:
   bluebuild:
-    name: Build wayblue
+    name: Build HyprBlue
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -21,27 +23,27 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
-          - #recipe-hyprland-nvidia.yml
+          - recipe-hyprland-nvidia.yml
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+    #  - name: Checkout repo
+    #    uses: actions/checkout@v4
 
-      - name: Add yq (for reading recipe.yml)
-        uses: mikefarah/yq@v4.44.2
+    #  - name: Add yq (for reading recipe.yml)
+    #    uses: mikefarah/yq@v4.44.2
 
-      - name: Gather image data from recipe
-        run: |
-          echo "IMAGE_NAME=$(yq '.name' ./recipes/${{ matrix.recipe }})" >> $GITHUB_ENV
-          echo "IMAGE_MAJOR_VERSION=$(yq '.image-version' ./recipes/${{ matrix.recipe }})" >> $GITHUB_ENV
-          BASE_IMAGE=$(yq '.base-image' ./recipes/${{ matrix.recipe }})
-          echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
+    #  - name: Gather image data from recipe
+    #    run: |
+    #      echo "IMAGE_NAME=$(yq '.name' ./recipes/${{ matrix.recipe }})" >> $GITHUB_ENV
+    #      echo "IMAGE_MAJOR_VERSION=$(yq '.image-version' ./recipes/${{ matrix.recipe }})" >> $GITHUB_ENV
+    #      BASE_IMAGE=$(yq '.base-image' ./recipes/${{ matrix.recipe }})
+    #      echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
 
-      - name: Verify base image
-        uses: EyeCantCU/cosign-action/verify@v0.3.0
-        with:
-          containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
+    #  - name: Verify base image
+    #    uses: EyeCantCU/cosign-action/verify@v0.3.0
+    #    with:
+    #      containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
 
-      - name: Build wayblue
+      - name: Build HyprBlue
         uses: blue-build/github-action@v1.6.1
         with:
           cli_version: v0.8.11
