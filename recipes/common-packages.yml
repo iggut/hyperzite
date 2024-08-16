@@ -1,4 +1,6 @@
 type: rpm-ostree
+repos: 
+- https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-40/atim-starship-fedora-40.repo
 install:
 # launcher
   - rofi-wayland
