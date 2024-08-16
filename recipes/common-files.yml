@@ -4,3 +4,7 @@ files:
     destination: /usr
   - source: system/etc
     destination: /etc
+  - source: home/fish
+    destination: ~/.config/fish
+  - source: home/starship
+    destination: ~/.config    

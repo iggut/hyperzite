@@ -8,4 +8,3 @@ install:
   - brightnessctl
   - aylurs-gtk-shell
   - swww
-  - gnome-themes-extra

@@ -66,11 +66,14 @@ install:
 
 # terminal
   - foot
+  - starship
+  - fish
 
 # notifications
   - dunst
 
 # theme and GUI
+  - chezmoi
   - adwaita-qt5
   - fontawesome-fonts-all
   - gnome-themes-extra
