@@ -7,4 +7,12 @@ files:
   - source: home/fish
     destination: ~/.config/fish
   - source: home/starship
-    destination: ~/.config    
+    destination: ~/.config
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - IntelOneMono
+        - JetBrainsMono
+      google-fonts:
+        - Roboto

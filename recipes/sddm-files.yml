@@ -1,0 +1,6 @@
+type: files
+files:
+  - source: home/Andromeda-plasma-6
+    destination: /usr/share/sddm/themes/Andromeda-plasma-6
+  - source: home/Ant-Dark-Plasma-6
+    destination: /usr/share/sddm/themes/Ant-Dark-Plasma-6

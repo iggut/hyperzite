@@ -18,4 +18,5 @@ modules:
   - from-file: sddm-scripts.yml
   - from-file: hyprland-dotfiles.yml
   - type: wayblue-signing
+  - from-file: sddm-files.yml
   - from-file: sddm-systemd.yml
