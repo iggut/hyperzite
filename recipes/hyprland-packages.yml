@@ -13,8 +13,6 @@ install:
   - wlogout
   - hypridle
   - fuzzel
-  - ticktick
   - speedcrunch
-  - dsnote
   - flameshot
   - hyprlock

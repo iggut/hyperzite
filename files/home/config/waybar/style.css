@@ -1,13 +1,11 @@
 /* import the global color definitions */
 @import url("../theming/colors.css");
 
-
 * {
   font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
   font-size: 13px;
 }
-
 
 window#waybar {
   background-color: @backround;
@@ -28,7 +26,7 @@ window#waybar {
 #mpd {
   padding: 0px 6px;
   border-radius: 20px;
-  border: 0.19em solid @purple;
+  border: 0.09em solid @purple;
   background-color: @background;
   color: @foreground;
 }
@@ -36,19 +34,18 @@ window#waybar {
 #submap {
   padding: 0px 6px;
   border-radius: 20px;
-  border: 0.19em solid @yellow;
+  border: 0.09em solid @yellow;
   background-color: @background;
   color: @foreground;
 }
 
 /* System Group */
 #system {
-
   border-radius: 20px;
   background-color: @background;
   color: @foreground;
   border-radius: 20px;
-  border: 0.19em solid @neon-purple;
+  border: 0.09em solid @neon-purple;
 }
 #cpu,
 #memory,
@@ -61,8 +58,8 @@ window#waybar {
   color: @foreground;
 }
 
-#temperature.critical { 
-    color: @red; 
+#temperature.critical {
+  color: @red;
 }
 
 #idle_inhibitor,
@@ -78,7 +75,7 @@ window#waybar {
   color: @foreground;
 }
 
-#language{
+#language {
   padding: 0px 8px;
 }
 
@@ -93,7 +90,7 @@ window#waybar {
 #window {
   color: rgba(255, 255, 255, 1);
   border-radius: 20px;
-  border: 0.19em solid @neon-purple;
+  border: 0.09em solid @neon-purple;
   background-color: @background;
   transition: all 0.4s ease-out;
 }
@@ -140,7 +137,7 @@ window#waybar {
 
 #window {
   margin: 0px 4px;
-  border: 0.19em solid rgba(255, 255, 255, 1);
+  border: 0.09em solid rgba(255, 255, 255, 1);
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -154,25 +151,25 @@ window#waybar {
 }
 
 #pulseaudio {
-  border: 0.19em solid @neon-pink;
+  border: 0.09em solid @neon-pink;
   padding: 0px 8px;
 }
 
 #pulseaudio.muted {
-  border: 0.19em solid @red;
+  border: 0.09em solid @red;
 }
 
 #custom-media {
-  border: 0.19em solid @cyan;
+  border: 0.09em solid @cyan;
   min-width: 100px;
 }
 
 #custom-media.custom-spotify {
-  border: 0.19em solid @green;
+  border: 0.09em solid @green;
 }
 
 #custom-media.custom-vlc {
-  border: 0.19em solid @orange;
+  border: 0.09em solid @orange;
 }
 
 #clock {
@@ -218,7 +215,7 @@ window#waybar {
 }
 
 #systray {
-  border: 0.19em solid @neon-light-blue;
+  border: 0.09em solid @neon-light-blue;
   padding: 0px 4px;
 }
 
@@ -238,7 +235,6 @@ window#waybar {
 #power-profiles-daemon {
   /* padding-right: 15px; */
   padding: 0px 8px 0px 4px;
-
 }
 
 #power-profiles-daemon.performance {
@@ -256,13 +252,13 @@ window#waybar {
 #custom-power {
   padding: 0px 6px;
   color: @red;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 #apps {
   padding: 0px 8px;
   border-radius: 20px;
-  border: 0.19em solid @neon-cyan;
+  border: 0.09em solid @neon-cyan;
   background-color: @background;
   color: @foreground;
 }
