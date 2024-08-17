@@ -3,6 +3,7 @@ repos:
 - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
 install:
   - hyprland
+  - hyprpaper
   - waybar
   - xdg-desktop-portal-hyprland
   - brightnessctl

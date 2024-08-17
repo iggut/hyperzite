@@ -8,11 +8,3 @@ files:
     destination: ~/.config/fish
   - source: home/starship
     destination: ~/.config
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - FiraCode
-        - IntelOneMono
-        - JetBrainsMono
-      google-fonts:
-        - Roboto

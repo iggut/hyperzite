@@ -8,6 +8,7 @@ base-image: ghcr.io/ublue-os/bazzite-nvidia
 image-version: 40 
 
 modules:
+  - from-file: fonts.yml
   - from-file: sddm-packages.yml
   - from-file: common-packages.yml
   - from-file: hyprland-packages.yml

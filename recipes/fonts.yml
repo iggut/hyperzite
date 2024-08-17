@@ -1,0 +1,16 @@
+modules:
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - JetBrainsMono
+        - IntelOneMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Fira Sans
+        - Fira Sans Condensed
+        - Fira Sans Extra Condensed
+        - Merriweather
+        - Cardo
+        - Libre Baskerville
+        - Roboto
