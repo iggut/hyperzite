@@ -1,0 +1,267 @@
+{
+  // Media Player
+  "custom/media": {
+    "format": "{}",
+    "return-type": "json",
+    "max-length": 40,
+    "escape": true,
+    "exec": "~/.config/waybar/scripts/mediaplayer.py 2> /dev/null", // Script in resources folder
+    "on-click" : "playerctl play-pause",
+    "on-scroll-down": "playerctl next",
+    "on-scroll-up": "playerctl previous",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 10,
+  },
+
+  // Workspaces
+  "hyprland/workspaces": {
+    "active-only": false,
+    "format": "{icon}",
+    // "show-special" : true,
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "format-icons": {
+      "1": "I",
+      "2": "II",
+      "3": "III",
+      "4": "IV",
+      "5": "V",
+      "6": "VI",
+      "7": "VII",
+      "8": "VIII",
+      "9": "IX",
+      "10": "X",
+      "11": "XI",
+      "12": "XII",
+      "13": "XIII",
+      "14": "XIV",
+      "15": "XV",
+      "16": "XVI",
+      "17": "XVII",
+      "18": "XVIII",
+      "19": "XIX",
+      
+    },
+  },
+
+  // Hyprland Window
+ "hyprland/window": {
+    "separate-outputs": true
+  },
+
+  // Hyprland Submaps
+  "hyprland/submap": {
+    "format": "{}",
+    "max-length": 30,
+    "tooltip": false,
+    "on-click" : "hyprctl dispatch submap reset"
+  },
+
+  // Clock
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}",
+  },
+
+  // Battery
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  // Power Profiles Daemon
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+
+  // Power Button
+  "custom/power": {
+    "format": "&#x23FB;",
+    "tooltip": false,
+    "on-click": "wlogout",
+    "on-click-right": "hyprlock",
+  },
+
+  // Audio Information
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-bluetooth-muted": " {icon}  ",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
+    "on-click-right": "pavucontrol",
+    "on-click": "~/.config/waybar/scripts/audio_changer.py",
+  },
+
+  // Brightness Information
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "on-click-right" : "nwg-displays"
+  },
+
+  // System Tray
+  "tray": {
+    "icon-size": 18,
+    "spacing": 7,
+  },
+
+  // network
+  "network": {
+	"interface": "wlan0",
+	"format": "{ifname}",
+	"format-wifi": "{essid} ({signalStrength}%) ",
+	"format-ethernet": "{ifname} ",
+	"format-disconnected": "", //An empty format will hide the module.
+	// "format-disconnected": "",
+	"tooltip-format": "{ifname}",
+	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+	"tooltip-format-ethernet": "{ifname} ",
+	"tooltip-format-disconnected": "Disconnected",
+	"max-length": 50
+},
+
+"bluetooth": {
+	"format": " {status}",
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+},
+
+// like caffein, prevent from sleeping
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    }, 
+    "icon-size": 18,
+    "spacing": 7
+},
+
+// Hypridle inhibitor
+// not needed anymore because Hyprland v0.41 fixed the bug 
+"custom/hypridle": {
+    "format": "{}{icon}", 
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    },
+    "return-type": "json",
+    // "escape": true,
+    "exec-on-event": true,
+    "return-type": "json",
+    "interval": 1,
+    "exec": "~/.config/hypr/scripts/hypridle.sh status",
+    "on-click": "~/.config/hypr/scripts/hypridle.sh toggle",
+    "icon-size": 18,
+    "spacing": 7
+},
+
+
+"hyprland/language": {
+    "format": "{}",
+    "format-en": "🇺🇸",
+    "format-de": "🇦🇹" ,
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+},
+
+// Do not Disturb Switch
+"custom/dnd": { 
+    "tooltip-format" : "Do not Disturb",
+    "format": "{}", 
+    "return-type": "json",
+    "on-click": "~/.config/waybar/scripts/dunst.sh toggle", 
+    "interval" : 1, // every sec
+    "exec" : "~/.config/waybar/scripts/dunst.sh status"
+},
+
+"cpu": {
+  "format": "{usage}% ",
+  "tooltip": false,
+  "on-click" : "kitty -e btop"
+},
+
+"memory": {
+        "format": "{}% "
+},
+
+"temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+   "format": "{temperatureC}°C {icon}",
+   "format-icons": ["", "", ""]
+},
+
+// Harddisc space used
+  "disk": {
+    "interval": 30,
+    "format": "{percentage_used}% ",
+    "path": "/",
+},
+
+
+"custom/app-launcher" : {
+  "format" : "",
+  "on-click" : "fuzzel",
+  "tooltip" : "Opent the App Launcher"
+},
+
+"custom/app-calc" : {
+  "format" : "󰪚",
+  "on-click" : "speedcrunch",
+  "tooltip" : "Open the Calculator"
+},
+
+"custom/app-code" : {
+  "format" : "󰨞",
+  "on-click" : "code",
+  "tooltip" : "Open the Code"
+},
+
+"custom/app-waypaper" : {
+  "format" : "",
+  "on-click" : "waypaper",
+  "tooltip" : "Change the Wallpaper"
+},
+
+"custom/app-clipboard" : {
+  "format" : "",
+  "on-click" : "cliphist list | wofi --dmenu | cliphist decode | wl-copy",
+  "tooltip" : "Open the Clipboard"
+}
+
+
+// global end
+}

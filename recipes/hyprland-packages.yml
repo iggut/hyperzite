@@ -9,3 +9,12 @@ install:
   - brightnessctl
   - aylurs-gtk-shell
   - swww
+  - kvantum
+  - wlogout
+  - hypridle
+  - fuzzel
+  - ticktick
+  - speedcrunch
+  - dsnote
+  - flameshot
+  - hyprlock

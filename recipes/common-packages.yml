@@ -70,6 +70,8 @@ install:
   - foot
   - starship
   - fish
+  - nodejs-bash-language-server
+  - ShellCheck
 
 # notifications
   - dunst
