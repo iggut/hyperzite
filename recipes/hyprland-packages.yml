@@ -5,6 +5,11 @@ repos:
 install:
   - egl-wayland
   - nwg-look
+  - nwg-shell
+  - nwg-bar
+  - nwg-menu
+  - nwg-shell-config
+  - nwg-shell-wallpapers
   - nwg-icon-picker
   - nwg-drawer
   - hyprland
