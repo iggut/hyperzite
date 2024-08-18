@@ -17,7 +17,6 @@ install:
   - kvantum
   - wlogout
   - fuzzel
-  - nwg-shell
   - nwg-menu
   - nwg-look
   - nwg-icon-picker
