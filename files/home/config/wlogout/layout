@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "wayland-logout",
+    "action" : "hyprctl dispatch exit",
     "text" : "Logout",
     "keybind" : "e"
 }
