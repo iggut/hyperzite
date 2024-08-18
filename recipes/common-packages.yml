@@ -8,6 +8,7 @@ install:
 # environment
   - power-profiles-daemon
   - xorg-x11-server-Xwayland
+  - Xwayland
   - polkit
   - xfce-polkit 
   - xdg-user-dirs
