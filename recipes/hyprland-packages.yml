@@ -2,19 +2,9 @@ type: rpm-ostree
 repos: 
 - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
 - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-40/tofik-nwg-shell-fedora-40.repo
-- https://copr.fedorainfracloud.org/coprs/tofik/sway/repo/fedora-40/tofik-sway-fedora-40.repo
-- https://copr.fedorainfracloud.org/coprs/mochaa/gtk-session-lock/repo/fedora-40/mochaa-gtk-session-lock-fedora-40.repo
 install:
-  - gtk-session-lock
-  - gtklock
   - egl-wayland
   - nwg-look
-  - nwg-shell
-  - nwg-bar
-  - nwg-menu
-  - nwg-shell-config
-  - nwg-shell-wallpapers
-  - nwg-icon-picker
   - nwg-drawer
   - hyprland
   - hyprpaper
