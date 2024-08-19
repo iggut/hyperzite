@@ -1,0 +1,46 @@
+{
+
+  "group/apps": {
+    "orientation": "inherit",
+    "modules": [
+      "custom/app-launcher", 
+      "custom/app-calc", 
+      "custom/app-code", 
+      "custom/app-waypaper", 
+      "custom/app-clipboard", 
+    ]
+  },
+
+
+  "group/systray": {
+    "orientation": "horizontal",
+    "modules": [
+      "tray", 
+      "idle_inhibitor",
+      "power-profiles-daemon", 
+      "custom/dnd"
+    ],
+  },
+
+  "group/end-right-module": {
+    "orientation": "horizontal",
+    "modules": [
+      // "hyprland/language",
+      "clock",
+      "backlight",
+      "battery",
+      "custom/power",
+    ],
+  },
+
+ "group/system": {
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "memory",
+      "temperature",
+      "disk"
+    ],
+  },
+
+}
