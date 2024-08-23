@@ -3,9 +3,9 @@ name: hyprland-gnome
 description: ublue images for wayland compositors
 
 #base-image: ghcr.io/ublue-os/base-main
-base-image: ghcr.io/ublue-os/bazzite-nvidia
+base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
 
-image-version: 40 
+image-version: latest 
 
 modules:
   - from-file: fonts.yml
