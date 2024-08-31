@@ -1,3 +1,4 @@
 type: script
 scripts:
   - settheming.sh
+  - zsh-shell.sh

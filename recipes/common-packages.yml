@@ -74,8 +74,12 @@ install:
   - starship
   - fish
   - zsh
+  - oh-my-zsh
   - nodejs-bash-language-server
   - ShellCheck
+  - eza
+  - fzf
+  - util-linux
 
 # notifications
   - dunst
