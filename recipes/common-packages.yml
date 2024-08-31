@@ -1,5 +1,6 @@
 type: rpm-ostree
 repos: 
+- https://copr.fedorainfracloud.org/coprs/mochaa/swaync/repo/fedora-40/mochaa-swaync-fedora-40.repo
 - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-40/atim-starship-fedora-40.repo
 install:
 # launcher
@@ -31,12 +32,14 @@ install:
   - pulseaudio-utils
 
 # networking
+  - NetworkManager-tui
   - network-manager-applet
   - NetworkManager-openvpn
   - NetworkManager-openconnect
   - bluez
   - bluez-tools
   - blueman
+
 
 # file manager
   - thunar
@@ -70,11 +73,13 @@ install:
   - foot
   - starship
   - fish
+  - zsh
   - nodejs-bash-language-server
   - ShellCheck
 
 # notifications
   - dunst
+  - swaync
 
 # theme and GUI
   - adwaita-qt5
