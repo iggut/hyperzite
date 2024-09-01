@@ -74,7 +74,7 @@ install:
   - starship
   - fish
   - zsh
-  - nodejs-bash-language-server
+  #- nodejs-bash-language-server
   - ShellCheck
   - eza
   - fzf
