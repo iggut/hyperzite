@@ -5,7 +5,6 @@ set -oue pipefail
 
 # Check if Zsh is installed
 if ! command -v zsh >/dev/null 2>&1; then
-  echo "Zsh is not installed. Please install Zsh first."
   exit 1
 fi
 
@@ -21,5 +20,3 @@ for user in $(cut -f1 -d: /etc/passwd); do
     chsh -s /bin/zsh "$user"
   fi
 done
-
-echo "Default shell set to Zsh for all users."
