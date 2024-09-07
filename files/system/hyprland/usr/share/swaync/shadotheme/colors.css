@@ -1,0 +1,40 @@
+/* control */
+/*@define-color text            @foreground;*/
+/*@define-color background-alt  alpha(@background, .4);*/
+/*@define-color selected        @selected;*/
+/*@define-color hover           alpha(@selected, .4);*/
+/*@define-color urgent          @urgent;*/
+/* notif */
+/*@define-color text            @foreground;*/
+/*@define-color background-alt  @background;*/
+/*@define-color selected        @selected-alt;*/
+/*@define-color hover           @hover-alt;*/
+/*@define-color urgent          @urgent;*/
+
+/*@define-color foreground #dfb7e8;*/
+/*@define-color backgroundCol #1b1b29;*/
+/*@define-color selected #6875ed;*/
+/*@define-color hover #6a5acd;*/
+@define-color urgent #f72d7c;
+/*@define-color selected-alt #ff7ab2;*/
+/*@define-color hover-alt #cba6f7;*/
+@define-color foreground white;
+@define-color background rgba(26, 27, 38, 0.4);
+@define-color selectedCol #6875ed;
+
+@define-color color0 #1b1b29;
+@define-color color1 #6875ed;/*#6875ed;*/
+@define-color color2 #6a5acd;
+@define-color color3 #32489C;
+@define-color color4 #5651A0;
+@define-color color5 #5459AD;
+@define-color color6 #816CB6;
+@define-color color7 #d1a7ce;
+@define-color color8 #927490;
+@define-color color9 #0C398D;
+@define-color color10 #2E3B89;
+@define-color color11 #32489C;
+@define-color color12 #5651A0;
+@define-color color13 #5459AD;
+@define-color color14 #816CB6;
+@define-color color15 #d1a7ce;

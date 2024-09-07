@@ -1,0 +1,88 @@
+@define-color bg-color rgba(26, 27, 38, 1);
+@define-color fg-color rgba(169, 177, 214, 1);
+@define-color tn-green rgba(158, 206, 106, 1);
+@define-color tn-red rgba(247, 118, 142, 1);
+@define-color tn-blue rgba(122, 162, 247, 1);
+@define-color tn-yellow rgba(224, 175, 104, 1);
+@define-color tn-purple rgba(187, 154, 247, 1);
+@define-color button-bg rgba(52, 59, 88, 1);
+
+* {
+	font-family: JetBrainsMono Nerd Font Propo;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+window {
+    background-color: rgba(30, 30, 46, 0.6);
+}
+
+button {
+    color: @fg-color;
+    background: @button-bg;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	margin: 5px;
+    outline-style: none;
+}
+
+button:hover {
+    color: @bg-color;
+    background: @tn-blue;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	margin: 5px;
+    outline-style: none;
+}
+
+
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+    background-image: image(url("./icons/lock-hover.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+}
+#logout:hover {
+    background-image: image(url("./icons/logout-hover.png"));
+}
+
+#suspend {
+    background-image: image(url("./icons/sleep.png"));
+}
+#suspend:hover {
+    background-image: image(url("./icons/sleep-hover.png"));
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+    background-image: image(url("./icons/power-hover.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover {
+    background-image: image(url("./icons/restart-hover.png"));
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+    background-image: image(url("./icons/hibernate-hover.png"));
+}

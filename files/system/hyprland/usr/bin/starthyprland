@@ -10,11 +10,6 @@ hyprland_conf="$HOME/.config/hypr/hyprland.conf"
 default_conf="/usr/share/hyprland/hyprland.conf"
 
 
-# Expand PATH Variable
-export PATH=/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/iggut/.local/bin:/home/iggut/bin:/home/iggut/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/libexec
-export XDG_CONFIG_DIRS=/home/iggut/.config/kdedefaults:/etc/xdg:/usr/share/kde-settings/kde-profile/default/xdg
-export XDG_DATA_DIRS=/home/iggut/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/iggut/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-
 if [ -f "$hyprland_conf" ]; then
     Hyprland -c "$hyprland_conf"
 else

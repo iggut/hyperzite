@@ -1,0 +1,28 @@
+* {
+    active-background: #1f2a44; /* Dark purple-blue-grey */
+    active-foreground: #D6CBD5;
+    normal-background: #0f1624; /* Darker variation for Tokyo-Night theme */
+    normal-foreground: #D6CBD5;
+    urgent-background: #3C4A6A; /* Darker purple-blue with a hint of green */
+    urgent-foreground: #D6CBD5;
+
+    alternate-active-background: #2C3D4A; /* Darker purple-blue-grey */
+    alternate-active-foreground: #D6CBD5;
+    alternate-normal-background: #0f1624; /* Darker variation for Tokyo-Night theme */
+    alternate-normal-foreground: #D6CBD5;
+    alternate-urgent-background: #0f1624; /* Darker variation for Tokyo-Night theme */
+    alternate-urgent-foreground: #D6CBD5;
+
+    selected-active-background: #1f2a44; /* Dark purple-blue-grey */
+    selected-active-foreground: #D6CBD5;
+    selected-normal-background: #BCADBB;
+    selected-normal-foreground: #D6CBD5;
+    selected-urgent-background: #3C4A6A; /* Darker purple-blue with a hint of green */
+    selected-urgent-foreground: #D6CBD5;
+
+    background-color: #0f1624; /* Darker background */
+    background: rgba(0,0,0,0.7);
+    foreground: #BCADBB;
+    border-color: #1f2a44; /* Dark purple-blue-grey */
+}
+
