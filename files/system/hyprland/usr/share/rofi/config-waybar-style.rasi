@@ -21,6 +21,6 @@ entry {
 
 /* ---- Listview ---- */
 listview {
-  columns: 2;
-  lines: 6;
+  columns: 3;
+  lines: 10;
 }

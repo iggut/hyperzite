@@ -33,7 +33,7 @@ window#waybar.empty #window {
 	border-radius: 15px;
 	border: 0px;
 	font-style: normal;
-	color: #0F1419;
+	color: @color15;
 }
 
 #taskbar button,
@@ -41,8 +41,8 @@ window#waybar.empty #window {
 	padding: 0px 5px;
 	border-radius: 15px;
 	border: 0px;
-	color: #0F1419;
-	background: linear-gradient(45deg, #95E6CB, #59C2FF, #D2A6FF);
+	color: @color15;
+	background: linear-gradient(45deg, @color1, @color2, @color9);
 	opacity: 0.5;
 	transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -52,8 +52,8 @@ window#waybar.empty #window {
 	padding: 0px 5px;
 	border-radius: 15px;
 	border: 0px;
-	color: #0F1419;
-	background: linear-gradient(45deg, #59C2FF, #D2A6FF);
+	color: @color2;
+	background: linear-gradient(45deg, @color15, @color14);
 	opacity: 1.0;
 	min-width: 40px;
 	transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
@@ -61,8 +61,8 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
 	border-radius: 15px;
-	color: #0F1419;
-	background: linear-gradient(45deg, #59C2FF, #D2A6FF);
+	color: @color2;
+	background: linear-gradient(45deg, @color15, @color14);
 	opacity: 0.8;
 	transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 

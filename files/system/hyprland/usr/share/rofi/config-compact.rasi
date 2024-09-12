@@ -11,7 +11,7 @@ configuration {
 /* ---- Window ---- */
 window {
   width: 50%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 /* ---- Inputbar ---- */
@@ -37,7 +37,7 @@ listview {
   lines: 5;
   spacing: 4px;
   scrollbar: false;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 /* ---- Element ---- */

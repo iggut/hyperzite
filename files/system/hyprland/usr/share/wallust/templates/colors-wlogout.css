@@ -1,0 +1,5 @@
+@define-color bg-color rgba({{background | rgb}},0.25);
+@define-color fg-color {{color15}};
+@define-color background-alt {{background}};
+@define-color tn-selected {{color6}};
+@define-color button-bg {{color9}};

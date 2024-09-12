@@ -5,7 +5,7 @@
 
 /* ---- Configuration ---- */
 configuration {
-	font:	"Fira Code SemiBold 13";
+	font:	"JetBrainsMono Nerd Font 13";
 }
 /* ---- Window ---- */
 window {
@@ -14,12 +14,12 @@ window {
 
 /* ---- Entry input ---- */
 entry {
-    width:	18%;
+    width:	20%;
 }
 
 /* ---- Listview ---- */
 listview {
-    lines:	8;
+    lines:	10;
 }
 
 /* ---- Mode Switcher ---- */
@@ -28,6 +28,6 @@ button {
 }
 
 element-text {
-    font:	"Fira Code SemiBold 16";
+    font:	"JetBrainsMono Nerd Font 16";
 }
 

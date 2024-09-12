@@ -24,10 +24,10 @@
 .control-center {
   border-radius: 1rem;
   -gtk-outline-radius: 1rem;
-  border-top: 1px solid #6a5acd;
-  border-left: 1px solid #6a5acd;
-  border-right: 1px solid #6a5acd;
-  border-bottom: 1px solid #6a5acd;
+  border-top: 1px solid @color4;
+  border-left: 1px solid @color4;
+  border-right: 1px solid @color4;
+  border-bottom: 1px solid @color4;
 
   margin: 7px;
   background: alpha(#1b1b29, 0.25);
@@ -35,7 +35,7 @@
 }
 
 .control-center trough {
-  background-color: #45475a;
+  background-color: @background;
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   min-width: 0.545rem;

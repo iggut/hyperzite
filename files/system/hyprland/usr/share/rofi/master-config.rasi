@@ -42,8 +42,8 @@ window {
     transparency:               "real";
     cursor:                     "default";
     spacing:                    0px;
-    border:                     2px;
-    border-radius:              30px;
+    border:                     1px;
+    border-radius:              10px;
     location:                   center;
     anchor:                     center;
 
@@ -68,7 +68,7 @@ inputbar {
     padding:                     10px 10px 100px 10px;
     margin:                      10px;
     background-color:            transparent;
-    border-radius:               25px;
+    border-radius:               10px;
     orientation:                 horizontal;
     children:                    ["entry", "dummy", "mode-switcher" ];
     background-image:            url("~/.config/rofi/.current_wallpaper", width);
@@ -80,7 +80,7 @@ entry {
     expand:                      false;
     width:                       20%;
     padding:                     10px;
-    border-radius:               12px;
+    border-radius:               10px;
     background-color:            @selected;
     text-color:                  @text-selected;
     cursor:                      text;
@@ -100,7 +100,7 @@ listbox {
 /* ---- Listview ---- */
 listview {
     enabled:                     true;
-    columns:                     2;
+    columns:                     4;
     lines:                       6;
     cycle:                       true;
     dynamic:                     true;
@@ -109,7 +109,7 @@ listview {
     reverse:                     false;
     fixed-height:                false;
     fixed-columns:               true;    
-    spacing:                     10px;
+    spacing:                     5px;
     background-color:            transparent;
 
 //  Adapt rofi theme
@@ -131,7 +131,7 @@ mode-switcher{
 button {
     width:                       5%;
     padding:                     12px;
-    border-radius:               12px;
+    border-radius:               10px;
     background-color:            @text-selected;
     text-color:                  @text-color;
     cursor:                      pointer;
@@ -155,7 +155,7 @@ element {
     enabled:                     true;
     spacing:                     10px;
     padding:                     10px;
-    border-radius:               12px;
+    border-radius:               10px;
     background-color:            transparent;
     cursor:                      pointer;
 }
@@ -227,7 +227,7 @@ textbox {
 }
 error-message {
     padding:                     12px;
-    border-radius:               20px;
+    border-radius:               10px;
     background-color:            @background-alt;
     text-color:                  @background;
 }

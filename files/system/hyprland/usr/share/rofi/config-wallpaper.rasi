@@ -36,7 +36,7 @@ element {
   orientation: vertical;
   padding: 0px;
   spacing: 0px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 element-icon {

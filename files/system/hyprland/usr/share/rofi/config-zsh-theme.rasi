@@ -11,7 +11,7 @@ configuration {
 /* ---- Window ---- */
 window {
   width: 40%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 /* ---- Imagebox ---- */
@@ -23,7 +23,7 @@ imagebox {
 
 /* ---- Listbox ---- */
 listbox {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 /* ---- Inputbar ---- */

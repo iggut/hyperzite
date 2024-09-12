@@ -510,7 +510,7 @@
 	]
 },
 "power-profiles-daemon": {
-  "format": "{icon}",
+  "format": " {icon}",
   "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
   "tooltip": true,
   "format-icons": {
@@ -650,7 +650,7 @@
 	"tooltip-format": "Left Click: Switch Dark-Light Themes\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Styles Menu",
 },
 "custom/lock": {
-	"format": "󰌾",
+	"format": "󰌾 ",
 	"on-click": "~/.config/hypr/scripts/LockScreen.sh",
 	"tooltip": true,
 	"tooltip-format": "󰷛 Screen Lock",

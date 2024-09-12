@@ -1,11 +1,5 @@
-@define-color bg-color rgba(26, 27, 38, 1);
-@define-color fg-color rgba(169, 177, 214, 1);
-@define-color tn-green rgba(158, 206, 106, 1);
-@define-color tn-red rgba(247, 118, 142, 1);
-@define-color tn-blue rgba(122, 162, 247, 1);
-@define-color tn-yellow rgba(224, 175, 104, 1);
-@define-color tn-purple rgba(187, 154, 247, 1);
-@define-color button-bg rgba(52, 59, 88, 1);
+@import 'wallust/colors-wlogout.css';
+
 
 * {
 	font-family: JetBrainsMono Nerd Font Propo;
@@ -14,7 +8,7 @@
 }
 
 window {
-    background-color: rgba(30, 30, 46, 0.6);
+    background-color: @bg-color;
 }
 
 button {
@@ -28,8 +22,8 @@ button {
 }
 
 button:hover {
-    color: @bg-color;
-    background: @tn-blue;
+    color: @background-alt;
+    background: @tn-selected;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;
