@@ -93,4 +93,4 @@ install:
   - papirus-icon-theme
 
 remove:
-  - power-profiles-daemon
+  - power-profiles-daemon-0.23-1.fc41.x86_64
