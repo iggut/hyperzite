@@ -24,5 +24,3 @@ install:
   - wlogout
   - fuzzel
 
-exclude:
-  - power-profiles-daemon
