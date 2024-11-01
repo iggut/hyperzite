@@ -20,3 +20,7 @@ modules:
   - type: wayblue-signing
   - from-file: sddm-files.yml
   - from-file: sddm-systemd.yml
+
+packages:
+  exclude:
+    - power-profiles-daemon

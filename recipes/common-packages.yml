@@ -48,7 +48,6 @@ install:
   - xarchiver
   - imv
   - p7zip
-  - unrar
   - gvfs-mtp
   - gvfs-gphoto2
   - gvfs-smb
