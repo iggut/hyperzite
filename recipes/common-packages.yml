@@ -7,7 +7,7 @@ install:
   - rofi-wayland
 
 # environment
-  - power-profiles-daemon
+  #- power-profiles-daemon
   - xorg-x11-server-Xwayland
   - polkit
   - xfce-polkit 
@@ -91,3 +91,6 @@ install:
   - paper-icon-theme
   - breeze-icon-theme 
   - papirus-icon-theme
+
+remove:
+  - power-profiles-daemon
