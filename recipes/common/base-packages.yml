@@ -1,8 +1,8 @@
 type: rpm-ostree
 repos: 
-  - https://copr.fedorainfracloud.org/coprs/hikariknight/looking-glass-kvmfr/repo/fedora-40/hikariknight-looking-glass-kvmfr-fedora-40.repo
-  - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-40/decathorpe-miniaturo-fedora-40.repo
-  - https://copr.fedorainfracloud.org/coprs/pesader/showmethekey/repo/fedora-40/pesader-showmethekey-fedora-40.repo
+  - https://copr.fedorainfracloud.org/coprs/hikariknight/looking-glass-kvmfr/repo/fedora-41/hikariknight-looking-glass-kvmfr-fedora-41.repo
+  - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-41/decathorpe-miniaturo-fedora-41.repo
+  - https://copr.fedorainfracloud.org/coprs/pesader/showmethekey/repo/fedora-41/pesader-showmethekey-fedora-41.repo
 install:
   - showmethekey # Keyboard code viewer, doesn't work in container
   - podman-compose
