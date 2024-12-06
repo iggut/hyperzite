@@ -44,7 +44,7 @@ jobs:
     #      containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
 
       - name: Build HyprBlue
-        uses: blue-build/github-action@33ee8cc4011b0d47666ea7026d08bb5b941ac90c # v1.7.0 # blue-build/github-action@v1.6.2
+        uses: blue-build/github-action@0658135ebdc49c55d03f7a4564edd0b1ccadaa0b # v1.7.0 # blue-build/github-action@v1.6.2
         with:
           cli_version: v0.8.25
           recipe: ${{ matrix.recipe }}
