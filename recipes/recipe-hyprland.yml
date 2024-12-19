@@ -5,7 +5,7 @@ description: ublue images for wayland compositors
 #base-image: ghcr.io/ublue-os/base-main
 base-image: ghcr.io/ublue-os/bazzite-nvidia
 
-image-version: latest
+image-version: 41
 
 modules:
   - from-file: fonts.yml
