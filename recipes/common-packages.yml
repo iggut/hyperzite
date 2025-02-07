@@ -104,5 +104,5 @@ install:
   - papirus-icon-theme
 
 exclude:
-  - swww-0.9.5-1.fc41.x86_64
+  - swww-zsh-completion-0.9.5-1.fc41.noarch
   - power-profiles-daemon-0.23-1.fc41.x86_64
