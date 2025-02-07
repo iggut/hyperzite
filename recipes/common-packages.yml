@@ -34,7 +34,7 @@ install:
   - pipewire
   - pamixer
   - pulseaudio-utils
-  - pipewire-codec-aptx
+  - pulseaudio-module-bluetooth-freeworld
 
 # networking
   - NetworkManager-tui
