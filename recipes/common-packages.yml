@@ -6,7 +6,7 @@ repos:
 - https://copr.fedorainfracloud.org/coprs/kwizart/fedy/repo/fedora-41/kwizart-fedy-fedora-41.repo
 
 remove:
-  - libva-intel-media-driver-1:24.4.4-1.fc41.x86_64
+  - libva-intel-media-driver
 
 install:
 # launcher
