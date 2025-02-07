@@ -3,9 +3,12 @@ repos:
 - https://copr.fedorainfracloud.org/coprs/mochaa/swaync/repo/fedora-41/mochaa-swaync-fedora-41.repo
 - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-41/atim-starship-fedora-41.repo
 - https://copr.fedorainfracloud.org/coprs/kylegospo/joycond/repo/fedora-41/kylegospo-joycond-fedora-41.repo
+- https://copr.fedorainfracloud.org/coprs/kwizart/fedy/repo/fedora-41/kwizart-fedy-fedora-41.repo
+
 install:
 # launcher
   - rofi-wayland
+  - fedy
 
 # gaming
   - joycond
@@ -34,7 +37,7 @@ install:
   - pipewire
   - pamixer
   - pulseaudio-utils
-  - pulseaudio-module-bluetooth-freeworld
+
 
 # networking
   - NetworkManager-tui
