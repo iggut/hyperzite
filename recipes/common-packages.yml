@@ -104,5 +104,5 @@ install:
   - papirus-icon-theme
 
 exclude:
-  - libva-intel-media-driver
+  #- libva-intel-media-driver
   - power-profiles-daemon-0.23-1.fc41.x86_64
