@@ -5,6 +5,9 @@ repos:
 - https://copr.fedorainfracloud.org/coprs/kylegospo/joycond/repo/fedora-41/kylegospo-joycond-fedora-41.repo
 - https://copr.fedorainfracloud.org/coprs/kwizart/fedy/repo/fedora-41/kwizart-fedy-fedora-41.repo
 
+remove:
+  - libva-intel-media-driver-1:24.4.4-1.fc41.x86_64
+
 install:
 # launcher
   - rofi-wayland
@@ -101,4 +104,5 @@ install:
   - papirus-icon-theme
 
 exclude:
+  - libva-intel-media-driver
   - power-profiles-daemon-0.23-1.fc41.x86_64
