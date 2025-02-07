@@ -34,6 +34,7 @@ install:
   - pipewire
   - pamixer
   - pulseaudio-utils
+  - pipewire-codec-aptx
 
 # networking
   - NetworkManager-tui
