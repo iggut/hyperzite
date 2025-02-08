@@ -24,3 +24,6 @@ install:
   - wlogout
   - fuzzel
 
+exclude:
+  - swww-fish-completion-0.9.5-1.fc41.noarch
+  - swww-zsh-completion-0.9.5-1.fc41.noarch
