@@ -96,7 +96,7 @@ install:
   - swaync
 
 # theme and GUI
-  #- adwaita-qt5
+  - swww
   - fontawesome-fonts-all
   - gnome-themes-extra
   - gnome-icon-theme

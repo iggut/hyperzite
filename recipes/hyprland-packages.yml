@@ -19,7 +19,6 @@ install:
   - speedcrunch
   - flameshot
   - aylurs-gtk-shell
-  #- swww
   - kvantum
   - wlogout
   - fuzzel
