@@ -7,8 +7,6 @@ repos:
 
 remove:
   - libva-intel-media-driver
-  - swww-zsh-completion
-  - swww-fish-completion
 
 install:
 # launcher
@@ -27,6 +25,7 @@ install:
   - dbus-tools
   - dbus-daemon
   - wl-clipboard
+  - gnome-keyring
   - pavucontrol
   - playerctl
   - qt5-qtwayland
