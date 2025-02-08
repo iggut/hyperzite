@@ -6,6 +6,7 @@ repos:
 - https://copr.fedorainfracloud.org/coprs/kwizart/fedy/repo/fedora-41/kwizart-fedy-fedora-41.repo
 
 remove:
+  - swww
   - libva-intel-media-driver
 
 install:
@@ -105,6 +106,4 @@ install:
   - papirus-icon-theme
 
 exclude:
-  - swww-fish-completion-0.9.5-1.fc41.noarch
-  - swww-zsh-completion-0.9.5-1.fc41.noarch
   - power-profiles-daemon-0.23-1.fc41.x86_64
